@@ -180,6 +180,7 @@ void scan_array(int array[], int size)
 1. Zadeklaruj tablicę jednowymiarową wybranymi wartościami (w kodzie). A następnie wyświetl zawartość tej tablicy za pomocą pętli *for, while* i *do... while*, tworząc odpowiednie funkcje.
    1. od początku do końca tablicy,
    1. od końca do początku tablicy.
+1. Wczytaj pięć liczb całkowitych do tablicy. Oblicz ich średnią w osobnej funkcji i wypisz elementy większe od tej średniej.
 1. Napisz program, który wczytuje do tablicy 10 liczb podanych przez użytkownika, a następnie wykonuje wymienione czynności. Podziel program na funkcje, tak aby każdy podpunkt realizowała przynajmniej jedna osobna funkcja.
    1. podaje ich średnią arytmetyczną,
    1. wypisze wszystkie liczby większe od średniej,
