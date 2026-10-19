@@ -36,7 +36,7 @@ int main() {
 	int tablica[5];
 	for(i=0; i<5; i++)
 	{
-		printf("Podaj element tablicy o indeksie %d:”, i);
+		printf("Podaj element tablicy o indeksie %d:", i);
 		scanf("%d", &tablica[i]);
 	}
 	for(i=0; i<5; i++)
@@ -72,7 +72,7 @@ int main() {
 >tablica[4] = 5
 
 ## **Sposoby przypisania do tablicy wartości początkowych**
-Deklarując tablicę można zainicjować jej początkowe wartości. W tym celu po deklaracji tablicy należy postawić operator przypisania oraz nawias klamrowy, wewnątrz którego należy podać wartości kolejnych elementów tablicy, oddzielając je przecinkami (6.1). Można też w tej deklaracji wybrać elementy tablicy których wartości chcemy wprowadzić. W tym celu należy przed wartością dopisać w nawiasie kwadratowym indeks (6.2). Elementy które nie będą podane zostaną wyzerowane. Korzystając z tej ostatniej własności można szybko przy deklaracji tablicy wyzerować ją całą (6.3). Tworząc tablicę i nadając jej wszystkie wartości początkowe można pominąć podanie jej rozmiaru w nawiasach kwadratowych. W takiej sytuacji rozmiar tablicy zostanie przypisany równy ilości elementów podanych w nawiasach klamrowych (6.4).
+Deklarując tablicę można zainicjować jej początkowe wartości. W tym celu po deklaracji tablicy należy postawić operator przypisania oraz nawias klamrowy, wewnątrz którego podaje się wartości kolejnych elementów, oddzielając je przecinkami (8.1). Można też wskazać wybrane elementy, przed wartością zapisując ich indeks w nawiasach kwadratowych (8.2). Elementy, których nie podano, zostaną wyzerowane. Dzięki temu można od razu wyzerować całą tablicę (8.3). Jeśli podamy wartości początkowe, możemy pominąć rozmiar tablicy: zostanie on ustalony na podstawie liczby elementów w inicjalizatorze (8.4).
 
 *Przykłady przypisanie wartości początkowych przy inicjacji tablicy.*
 
@@ -107,7 +107,7 @@ Deklarując tablicę można zainicjować jej początkowe wartości. W tym celu p
 | :-: | :-: | :-: | :-: |
 
 ## **Tworzenie funkcji obsługujących tablice**
-Podrozdział ten podchodzi do działania z tablicami w funkcji tylko względem praktyki. Wyjaśnienie zjawiska jest zawarte w rozdziale 14 dla którego istotnym jest zrozumienie wskaźników (rozdział 12) oraz dynamicznego tworzenia tablic (rozdział 13).  
+Podrozdział ten pokazuje praktyczne działanie na tablicach w funkcjach. Wyjaśnienie przekazywania tablic do funkcji znajduje się w rozdziale 13; wcześniej, w rozdziale 12, omawiane są wskaźniki.
 
 Aby stworzyć funkcję, która wykona nam działanie na tablicy, należy zadeklarować parametr tej funkcji jako tablicę. Drugim istotnym parametrem, który należy podać, aby obsłużyć tablicę, jest jej rozmiar – uchroni to nasz program od nieoczekiwanych wyjść z tablicy w nieznany nam obszar pamięci. Bardzo ważną różnicą jest fakt, że operacje na parametrze - tablicy tak zadeklarowanej funkcji wpłyną na oryginalną tablicę. Aby wywołać funkcję operującą na tablicy, należy podać nazwę tablicy bez zawierania nawiasów kwadratowych (w praktyce jest to wskaźnik do pierwszego elementu tablicy).
 
@@ -154,7 +154,7 @@ void scan_array(int array[], int size)
 
 ```
 
-*Wynik działania programu (identyczny jak z przykładu 6.0)*
+*Wynik działania programu (identyczny jak z przykładu 8.0)*
 
 >Podaj element tablicy o indeksie 0:1
 >
